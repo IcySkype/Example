@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Book API Frontend</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Book Manager</h1>
+            <section id="add-book">
+                <h3>Add New Book</h3>
+                <input type="number" id="bookId" placeholder="ID">
+                <input type="text" id="bookTitle" placeholder="Title">
+                <input type="text" id="bookAuthor" placeholder="Author">
+                <button onclick="addBook()">Add Book</button>
+            </section>
+            <hr>
+            <section id="display-books">
+                <h3>Library Inventory</h3>
+                <button onclick="fetchBooks()">Refresh List</button>
+                <ul id="bookList"></ul>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
